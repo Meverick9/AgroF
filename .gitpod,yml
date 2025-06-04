@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: git config --global --add safe.directory /workspace/AgroF
+  - name: Setup Flutter
+    command: |
+      cd AgroFlightGIS_FinalFull
+      flutter pub get
+
+vscode:
+  extensions:
+    - dart-code.flutter
